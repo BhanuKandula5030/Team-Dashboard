@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Team Dashboard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Team Dashboard App is a web application built using React for managing and visualizing team-related information. This dashboard provides insights into team members, ongoing projects, team metrics, and collaboration within the team.
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+- **`src/`**: Contains the source code of the React application.
+    - **`Authenticator.js`**: Defines an authentication context for user login/logout.
+    - **`App.js`**: The main component that integrates different sections of the dashboard.
+    - **`App.css`**: Contains the styles logic for app component
+    - **`MemberDetail.js`**: Component for displaying detailed information about a team member.
+    - **`ProjectDetail.js`**: Component for displaying detailed information about a project.
+    - **`TeamCollaboration.js`**: Component for team collaboration, including a message list and input.
+    - **`TeamMember.js`**: Component for displaying basic information about a team member.
+    - **`TeamMetrics.js`**: Component for displaying team metrics, such as project completion rate and member workload.
+    - **`TeamProject.js`**: Component for displaying basic information about a team project.
+- **`public/`**: Contains static assets and the HTML template.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **Bootstrap**: A CSS framework for building responsive and visually appealing web applications.
+- **React Bootstrap**: React components that are compatible with Bootstrap.
+- **@testing-library**: Libraries for testing React components and user interactions.
 
-### `npm test`
+## Scripts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`start`**: Start the development server.
+- **`build`**: Build the production-ready version of the app.
+- **`test`**: Run tests using Jest.
 
-### `npm run build`
+## How to Run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the app locally using `npm start`.
+4. Run the Test cases using `npm test`.
+5. Access the app in your browser at [http://localhost:3000]or (http://localhost:3001).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Authentication
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app provides a basic authentication system with a login modal. Certain features, such as viewing member details and project details, require authentication.
 
-### `npm run eject`
+In this The team leads are given the user name and password to authenticate and view the additional member and project details
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+User name : admin
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Password : admin
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Testing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project includes unit tests for components using the Jest testing library.
 
-## Learn More
+The tests verifies each and every aspect works as expected.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Eah component tests are written in    - **`MemberDetail.test.js`**,**`ProjectDetail.test.js`**, **`TeamCollaboration.test.js`**, **`TeamMember.test.js`**, **`TeamMetrics.test.js`**,**`TeamProject.test.js`**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the test cases command : `npm test`.
